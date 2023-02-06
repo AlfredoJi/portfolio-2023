@@ -12,7 +12,7 @@ how to style html using css and how to link images to html.
 ## Installation
 
 No steps needed to install. Just follow this URL to get to website.
-URL: 
+URL: https://alfredoji.github.io/portfolio-2023/
 
 ## Usage
 
