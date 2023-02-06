@@ -1,11 +1,18 @@
 :root{
     --dark: #1c1c1c;
     --light: #888888;
+    --purple: #0d0310;
 }
 
 * {
     background-color: var(--dark);
     color: var(--light);
+    font-family:'Times New Roman', Times, serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -42,69 +49,196 @@ nav a:hover {
     color:white
 }
 
-img {
+.pattern {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 800px;
+    width: 1400px;
+    height: 1060px;
 }
+
 
 h2 {
     width: 10%;
-    float: left;
     font-size: 70px;
-    padding-right: 20px;
-    margin-top: 0;
+    padding-right: 80px;
+    margin-top: 100px;
     text-align: end;
-    word-spacing: 20px;
+    word-spacing: 10px;
 }
 
 h3 {
+    display: flex;
     width: 10%;
     float: left;
     font-size: 70px;
-    padding-right: 20px;
-    margin-top: 0;
+    padding-right: 290px;
+    padding-bottom: 1180px;
+    margin: 0;
     text-align: end;
     word-spacing: 20px;
+    border-right: 5px solid var(--purple);
+}
+
+h4 {
+    display: flex;
+    width: 10%;
+    float: left;
+    font-size: 70px;
+    padding-right: 290px;
+    padding-bottom: 90px;
+    text-align: right;
+    border-right: 5px solid var(--purple);
+    margin-top: 30px;
+    margin-right: 1000px;
 }
 
 .picture {
+    display: flex;
+    position: relative;
     width: 20%;
-    height: 20%;
+    height: 330px;
     float: left;
+    margin-left: 250px;
+    margin-top: -220px;
     border-style: solid;
+    border-color: var(--purple);
 }
 
 .info {
+    display: flex;
+    float: right;
     font-size: 40px;
-    margin: 10px;
-    padding: 30px;
-    padding-left: 600px;
+    margin-top: -350px;
+    padding: 10px;
+    padding-left: 670px;
+    margin-right: 0px;
 }
 
 .card {
+    display: flexbox;
     border-style: solid;
-    border-width: 1px;
+    border-width: 10px;
     float: left;
-    width: 50%;
+    width: 40%;
     position: relative;
     text-align: center;
-    color: var(--light);
-    margin-left: 100px;
+    color: var(--dark);
+    margin-left: 150px;
 }
 
 .card header {
-    padding: 10px;
+    border-style: solid;
+    border-left: var(--dark);
+    border-color: var(--purple);
 }
 
 .left {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 30px;
+    left: 0px;
+    padding: 10px;
   }
 
 .image {
-    height: 500px;
+    height: 600px;
+    opacity: 1;
+}
+
+.lcard {
+    display: flexbox;
+    border-style: solid;
+    border-width: 9px;
+    float: left;
+    width: 20%;
+    position: relative;
+    text-align: center;
+    color: var(--dark);
+    margin-left: 150px;
+}
+
+.lcard header {
+    border-style: solid;
+    border-left: var(--dark);
+    border-color: var(--purple);
+}
+
+.simage {
+    height: 300px;
+}
+
+.simage2 {
+    height: 300px;
+    width: 400px;
+}
+
+.rcard {
+    display: flexbox;
+    border-style: solid;
+    border-width: 9px;
+    float: right;
+    width: 20%;
+    position: relative;
+    text-align: center;
+    color: var(--dark);
+    margin-right: 355px;
+}
+
+.rcard header {
+    border-style: solid;
+    border-left: var(--dark);
+    border-color: var(--purple);
+}
+
+.contact {
+    display: flex;
+    float: left;
+    font-size: 25px;
+    margin-top: 130px;
+    margin-right: 100px;
+    margin-left: -883px;
+    column-gap: 189px;
+    list-style-type: none;
+}
+
+footer a:hover {
+    color:white
+}
+
+main a:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 961px) {
+ 
+nav ul {
+        float: none;
+        width: 100%;
+    }
+  
+.card {
+    width: 50%;
+    float: right;
+    margin-top: -1200px;
+  }
+
+  .lcard {
+    margin-top: -580px;
+    margin-left: 512px;
+  }
+
+  .rcard {
+    margin-top: -100px;
+    margin-right: 100px;
+  }
+
+.picture  {
+    height: 600px;
+    width: 50%;
+    margin-top: -300px;
+  }
+
+.info {
+    padding-left: 740px;
+    margin-top: -620px;
+    margin-right: -900px;
+  }
 }
