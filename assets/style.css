@@ -141,6 +141,7 @@ h4 {
 /*Sizes the large work image card.*/
 .image {
     height: 600px;
+    width: 900px;
     opacity: 1;
 }
 /*Sets rules for smaller card that is on the left.*/
